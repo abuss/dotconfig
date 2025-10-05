@@ -79,10 +79,6 @@ eval "$(starship init zsh)"
 
 source <(jj util completion zsh)
 
-# helix-gpt
-export COPILOT_API_KEY=ghu_wEeOFQTaMqP4PXJx6rrHPgIixtGSNs2ZUCAl
-export HANDLER=copilot
-
 # minemacs
 #export MINEMACSDIR=~/.minemacs/
 
