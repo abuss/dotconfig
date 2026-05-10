@@ -63,7 +63,7 @@ export TERM=xterm-256color
 export PATH=$PATH:${HOME}/.local/bin
 
 # Aliases
-alias ls='ls --color'
+alias ls='lsd'
 # alias vim='nvim'
 # alias c='clear'
 alias hx='helix '
@@ -77,8 +77,9 @@ eval "$(zoxide init --cmd cd zsh)"
 
 eval "$(starship init zsh)"
 
-source <(jj util completion zsh)
+# source <(jj util completion zsh)
 
+export PATH=${HOME}/.local/bin:${PATH}
 # minemacs
 #export MINEMACSDIR=~/.minemacs/
 
@@ -86,3 +87,11 @@ source <(jj util completion zsh)
 # export PATH=${HOME}/.config/nkodos/rootfs/usr/bin:${PATH}
 # export LD_LIBRARY_PATH=${HOME}/.config/nkodos/rootfs/usr/lib:${HOME}/.config/nkodos/rootfs/usr/lib64:$LD_LIBRARY_PATH
 
+
+# opencode
+export PATH=/home/abuss/.opencode/bin:$PATH
+
+# Chisel user-level configuration
+export CHISEL_USER_BASE_DIR="/home/abuss/.local/share/chisel"
+export PATH="$PATH:$HOME/.local/bin/usr/bin/"
+export LD_LIBRARY_PATH="$HOME/.local/lib:$LD_LIBRARY_PATH"
